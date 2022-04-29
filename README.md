@@ -25,4 +25,11 @@ The completion time is now 5 minutes and 38 seconds which is only sloightly slow
 
 <img width="796" alt="Q4" src="https://user-images.githubusercontent.com/90704283/165857441-be9bba58-fcba-42de-99eb-81e0fb32507e.png">
 
+### Question 5 Use enwiki_whole.xml as input and run the program under HDFS inside the Spark cluster you deployed. Record the completion time. Now, kill one of the worker nodes immediately. You could kill one of the worker nodes by go to the VM Instances tab on the Cluster details page and click on the name of one of the workers. Then click on the STOP button. Record the completion time. Does the job still finish? Do you observe any difference in the completion time? Briefly explain your observations. Include your screenshot of the dataproc jobs.
+
+The job with two worker nodes took 1 hr and 13 minutes to complete successfully. 
+<img width="796" alt="Q5_1" src="https://user-images.githubusercontent.com/90704283/165866143-cd3c1ee6-9a31-4cbe-854c-ebce777186fd.png">
+
+When i restarted the job and immidiately killed one of the nodes, the job did finish but was much slower. It took 2 hours and 21 minutes whihc is almost double the original running time. This makes sense since we only had one worker node instead of two.
+<img width="796" alt="Q2_2" src="https://user-images.githubusercontent.com/90704283/165877615-ecd52922-670d-4511-88dd-0feddc5b22fe.png">
 
