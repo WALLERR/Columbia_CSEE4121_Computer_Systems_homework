@@ -67,9 +67,7 @@ I used 36 minutes to run it.
 
 ### **Question 10** (2 points) Spark Streaming can also be used to send data via TCP sockets. The Emitter in this case will wait on a socket connection request from the receiver, and upon accepting the connection request it will start sending data. Do you think such data server design is feasible and efficient? Briefly explain.
 
-
-
-The data server design is feasible because data could be transferred through TCP socket. However, it is not efficient because we already get the data on the HDFS, and we could just read the data from HDFS instead of transmitting the data through network.
+It is feasible but not efficient. It is not necessary because we can read data from HDFS instead of sending and receiving data via TCP sockets.
 
 
 
