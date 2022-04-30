@@ -1,0 +1,68 @@
+Part 1 Task 2 Configurations
+
+Question 2:
+Input: enwiki_test.xml
+Cluster: Single node cluster, HDSF block-size = Default
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  1g
+
+Question 3:
+Input: enwiki_test.xml
+Cluster: 3-Node cluster, HDSF block-size = Default
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  1g
+
+Question 4:
+Input: enwiki_test.xml
+Cluster: 3-Node cluster, HDSF block-size = 64 MB
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  1g
+
+
+Question 5:
+Part 1
+Input: enwiki_whole.xml
+Cluster: 3-Node cluster, HDSF block-size = Default, 2 active worker nodes.
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  5g
+    
+Part 2
+Input: enwiki_whole.xml
+Cluster: 3-Node cluster, HDSF block-size = Default, 1 active worker node, 1 worker node disactivated.
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  5g
+
+
+Question 6:
+Input: enwiki_whole.xml
+Cluster: 3-Node cluster, HDSF block-size = Default, 2 active worker nodes, HDSF Replication factor set to 1.
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  5g
+    
+Question 7:
+Input: enwiki_whole.xml
+Cluster: 3-Node cluster, HDSF block-size = 64MB, 2 active worker nodes.
+Job configuration: 
+    spark.executor.cores:  4
+    spark.driver.cores:  4
+    spark.executor.memory:  5g
+    spark.driver.memory:  5g
+ 
