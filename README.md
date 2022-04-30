@@ -33,3 +33,19 @@ The job with two worker nodes took 1 hr and 13 minutes to complete successfully.
 When i restarted the job and immidiately killed one of the nodes, the job did finish but was much slower. It took 2 hours and 21 minutes whihc is almost double the original running time. This makes sense since we only had one worker node instead of two.
 <img width="796" alt="Q2_2" src="https://user-images.githubusercontent.com/90704283/165877615-ecd52922-670d-4511-88dd-0feddc5b22fe.png">
 
+### Question 6 Only for this question, change the replication factor of enwiki_whole.xml to 1 and repeat Question 5 without killing one of the worker nodes. Include your screenshot of the dataproc job. Do you observe any difference in the completion time? Briefly explain.
+
+The completion time was 1 hr and 14 minutes which is almost exactly the same as the original job. This means that the code did not need to access replicated data and was able to finish successfully. 
+<img width="796" alt="Q6" src="https://user-images.githubusercontent.com/90704283/166080237-2c7b711a-de4d-40ef-a7bf-6492feaad727.png">
+
+### Question 7. (2 points) Only for this question, change the default block size in HDFS to be 64MB and repeat Question 5 without killing one of the worker nodes. Record run time, include your screenshot of the dataproc job. Is the performance getting better or worse in terms of completion time? Briefly explain.
+
+The run time was 1 hr and 15 minutes which is almost the same as the original running time. This indicates that the block size does not have a significant impact on running time. 
+
+<img width="796" alt="Q7" src="https://user-images.githubusercontent.com/90704283/166084281-ea006c57-1adc-4946-9a66-eef810a91f2d.png">
+
+
+
+
+
+
