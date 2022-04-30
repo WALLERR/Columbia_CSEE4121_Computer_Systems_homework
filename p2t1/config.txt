@@ -1,0 +1,19 @@
+Region
+us-central1
+Cluster
+cluster-zihao-node1
+Job type
+PySpark
+Main python file
+gs://dataproc-staging-us-central1-398592550746-z8akpufv/notebooks/jupyter/task2-1.py
+Jar files
+gs://csee4121/homework2/spark-xml_2.12-0.14.0.jar
+Properties
+spark.executor.cores
+4
+spark.driver.cores
+4
+spark.executor.memory
+5g
+spark.driver.memory
+5g
